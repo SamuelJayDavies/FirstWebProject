@@ -13,6 +13,7 @@ html {
     height: 69px;
     background-color: black;
     border-bottom: 1px solid seashell;
+    z-index: 1;
 }
 
 #logo {
@@ -29,6 +30,14 @@ html {
 
 #nav-list li {
     margin-right: 2rem;
+}
+
+#nav-list a {
+    color: seashell;
+}
+
+#nav-list a:hover {
+    color: rgba(255, 245, 238, 0.514);
 }
 
 .banner {
@@ -72,13 +81,13 @@ html {
 
 .description h2 {
     font-size: 30px;
-    margin: 10px 5px;
+    margin: 20px 5px;
     margin-top: 60px;
 }
 
 .description h4 {
     font-size: 22px;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 .photo-container {
@@ -93,7 +102,7 @@ html {
 
 .photos {
     display: flex;
-    border: 1px solid white;
+    justify-content: center;
     width: 1000px;
     flex-wrap: wrap;
 }
@@ -107,5 +116,73 @@ html {
 }
 
 .photos figure {
-    margin: 20px 10px;
+    margin: 5px 10px;
+}
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.location-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 1200px;
+    padding-top: 100px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1j8u0ei*_ga*MzA5NjU5OTQyNy4xNjU3NTM1NzM1*_ga_3LRZM6TM9L*MTY2MTMzOTU4My42My4xLjE2NjEzMzk1ODYuNTcuMC4w");
+}
+
+.location-panel {
+    display: flex;
+    flex-direction: row;
+}
+
+.location-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px;
+    font-size: 22px;
+    height: 300px;
+    width: 300px;
+    background-color: black;
+}
+
+.location-box h3 {
+    margin-bottom: 5px;
+}
+
+.location-box p {
+    margin-bottom: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+.contact h1 {
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+
+.contact h5,
+    #copyright h5 {
+    font-size: 18px;
+    margin: 15px auto;
+}
+
+#copyright {
+    margin-left: 20px;
+    text-align: left;
 }
